@@ -5,73 +5,68 @@ header {
     padding: 40px;
     font-size: 3rem;
     box-sizing: border-box;
-    .header-flex {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap; 
-        justify-content: space-evenly;
-        h2 {
-            margin-top: 15px;
-        }
+    h2 {
+        margin-top: 15px;
     }
 }
 nav {
     background-color: $negro;
     padding: 10px;
+    span {
+        background-color: rgb(255, 0, 0);
+        margin: 5px;
+        padding: 10px 30px;
+        border-radius: 4px;
+        &:hover {
+            border-left: 10px deeppink;
+            cursor: pointer;
+        }
+    }
+}
+aside {
+        background-color: pink;
+        div {
+            background-color: blue;
+            margin: 5px;
+            font-size: 1rem;
+            padding: 10px;
+        }
+    }
+    
+section {
+        padding: 20px;
+        padding: 10px;
+        article {
+            text-align: center;
+            img {
+                border-radius: 50%;
+                box-shadow: 2px 2px 5px $negro;
+            }
+        }
+    }
+    .header-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: space-evenly;
+    }
     .menu-flex {
         display: flex;
         justify-content: space-around;
         flex-direction: row;
         align-items: flex-start;
-        span {
-            background-color: rgb(255, 0, 0);
-            margin: 5px;
-            padding: 10px 30px;
-            border-radius: 4px;
-            &:hover {
-                border-left: 10px deeppink;
-                cursor: pointer;
-            }
-        }
     }
-}
-.main-flex {
-    display: flex;
-    aside {
-        background-color: pink;
+    .main-flex {
+        display: flex;
         .columna-flex {
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
             justify-content: flex-start;
-            div {
-                background-color: blue;
-                margin: 5px;
-                font-size: 1rem;
-                padding: 10px;
-                }
-            }
         }
     }
-    section {
-        padding: 20px;
-        padding: 10px;
-        .galeria-flex {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-evenly;
-            article {
-                text-align: center;
-                img {
-                    border-radius: 50%;
-                    box-shadow: 2px 2px 5px $negro;
-                }
-            }
-        }
+    .galeria-flex {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
     }
-.columna-flex {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-}
