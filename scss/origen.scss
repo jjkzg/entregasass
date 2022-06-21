@@ -49,6 +49,7 @@ nav {
                 margin: 5px;
                 font-size: 1rem;
                 padding: 10px;
+                }
             }
         }
     }
@@ -68,4 +69,9 @@ nav {
             }
         }
     }
+.columna-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 }
